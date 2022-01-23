@@ -3,6 +3,22 @@
 @mixin section {
     .gradient-container {
         background: linear-gradient(to bottom, var.$dark-blue-background, var.$dark-blue-lighter);
+        padding-bottom: 5rem;
+        position: relative;
+
+
+       .left-stars{
+            position: absolute;
+            top: 15%;
+            width: 20%;
+        }
+
+        .right-stars{
+            position: absolute;
+            bottom: 15%;
+            right: 0%;
+            width: 25%;
+        }
     }
 
     .primal-nav {
@@ -26,6 +42,7 @@
             .menu-item {
                 text-align: center;
                 margin: auto 1.5rem;
+                font-weight: var.$light;
 
 
                 & a {

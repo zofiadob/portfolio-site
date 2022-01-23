@@ -1,5 +1,6 @@
 @use './variables' as var;
 @use './gradient-container' as grad;
+@use './welcome-section' as welc;
 
 html{
     box-sizing: border-box;
@@ -7,10 +8,16 @@ html{
     background: var.$dark-blue-background;
     color: var.$white;
     font-size: var.$default-size;
+    font-weight: var.$regular;
 }
 
 body{
     margin: 0;
+
+    .text-blue{
+        color: var.$blue;
+    }
 }
 
 @include grad.section;
+@include welc.section;

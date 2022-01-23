@@ -1,0 +1,43 @@
+@use "./variables" as var;
+
+@mixin section {
+  
+    .welcome-section{
+        margin: 8em 6rem;
+        font-size: 1.3em;
+        text-align: center;
+        
+
+        h1{
+            font-weight: var.$semiBold;
+            font-size: 4rem;
+            margin: 1rem 0;
+        }
+
+        h2{
+            font-weight: var.$light;
+            margin-bottom: 3rem;
+        }
+
+        .big-button{
+            max-width: 15rem;
+            padding: 1rem;
+            margin: auto;
+        }
+    }
+
+    .button{
+        color: var.$dark-blue-background;
+        background-color: var.$blue;
+        border-radius: 2rem;
+        font-weight: var.$semiBold;
+        border: 1px solid var.$blue;
+        transition: color .7s, background-color .7s;
+
+        &:hover{
+            background: transparent;
+            color: var.$blue;
+            cursor: pointer;
+        }
+    }
+}
