@@ -1,0 +1,43 @@
+@use "./variables" as var;
+
+@mixin section {
+    .gradient-container {
+        background: linear-gradient(to bottom, var.$dark-blue-background, var.$dark-blue-lighter);
+    }
+
+    .primal-nav {
+        margin: 1.5rem 6rem;
+        font-size: 1.3em;
+    }
+
+    .menu-list {
+        display: flex;
+        
+
+        .logo-image{
+            width: 90%;
+        }
+
+        .left-items {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            .menu-item {
+                text-align: center;
+                margin: auto 1.5rem;
+
+
+                & a {
+                    color: var.$white;
+                    text-decoration: none;
+                    transition: color .7s;
+
+                    &:hover{
+                        color: var.$blue;
+                    }
+                }
+            }
+        }
+    }
+}

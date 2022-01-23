@@ -1,9 +1,16 @@
 @use './variables' as var;
+@use './gradient-container' as grad;
 
 html{
     box-sizing: border-box;
+    font-family: var.$font-main;
+    background: var.$dark-blue-background;
+    color: var.$white;
+    font-size: var.$default-size;
 }
 
 body{
     margin: 0;
 }
+
+@include grad.section;
