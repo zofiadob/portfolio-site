@@ -1,0 +1,47 @@
+@use "./variables" as var;
+
+@mixin section {
+    .background-1{
+        background: var.$dark-blue-lighter;
+    }
+
+    .about-section {
+        margin: 1.5rem 6rem;
+        display: flex;
+        padding: 3rem 0;
+
+        .text-container {
+            justify-self: flex-start;
+            padding: 0 4rem 0 4rem;
+
+            h2 {
+                font-size: 3rem;
+                margin-top: 0;
+            }
+
+            h3 {
+                font-weight: var.$regular;
+            }
+        }
+
+        .photo-container {
+            margin: auto;
+            justify-self: center;
+            position: relative;
+
+            img {
+                width: 100%;
+                max-width: 350px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .icon-container {
+        max-width: 100px;
+
+        img{
+            max-width: 60px;
+        }
+    }
+}

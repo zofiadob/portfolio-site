@@ -27,7 +27,7 @@ body .text-blue {
 }
 .gradient-container .right-stars {
   position: absolute;
-  bottom: 15%;
+  top: 30%;
   right: 0%;
   width: 25%;
 }
@@ -94,4 +94,42 @@ body .text-blue {
   background: transparent;
   color: #63CCFA;
   cursor: pointer;
+}
+
+.background-1 {
+  background: #202D3F;
+}
+
+.about-section {
+  margin: 1.5rem 6rem;
+  display: flex;
+  padding: 3rem 0;
+}
+.about-section .text-container {
+  justify-self: flex-start;
+  padding: 0 4rem 0 4rem;
+}
+.about-section .text-container h2 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+.about-section .text-container h3 {
+  font-weight: 400;
+}
+.about-section .photo-container {
+  margin: auto;
+  justify-self: center;
+  position: relative;
+}
+.about-section .photo-container img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 50%;
+}
+
+.icon-container {
+  max-width: 100px;
+}
+.icon-container img {
+  max-width: 60px;
 }
