@@ -2,7 +2,7 @@
 @use './gradient-container' as grad;
 @use './welcome-section' as welc;
 @use './about-section' as about;
-
+@use './project-section' as project;
 
 html{
     box-sizing: border-box;
@@ -24,3 +24,4 @@ body{
 @include grad.section;
 @include welc.section;
 @include about.section;
+@include project.section;

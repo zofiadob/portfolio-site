@@ -101,20 +101,9 @@ body .text-blue {
 }
 
 .about-section {
-  margin: 1.5rem 6rem;
+  margin: 0 6rem;
   display: flex;
   padding: 3rem 0;
-}
-.about-section .text-container {
-  justify-self: flex-start;
-  padding: 0 4rem 0 4rem;
-}
-.about-section .text-container h2 {
-  font-size: 3rem;
-  margin-top: 0;
-}
-.about-section .text-container h3 {
-  font-weight: 400;
 }
 .about-section .photo-container {
   margin: auto;
@@ -132,4 +121,26 @@ body .text-blue {
 }
 .icon-container img {
   max-width: 60px;
+}
+
+.text-container {
+  justify-self: flex-start;
+  padding: 0 4rem 0 4rem;
+}
+.text-container h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+.text-container h3 {
+  font-weight: 400;
+}
+
+.background-2 {
+  background: #161E29;
+}
+
+.project-section {
+  margin: 0 6rem;
+  display: flex;
+  padding: 3rem 0;
 }

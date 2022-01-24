@@ -1,5 +1,13 @@
 @use "./variables" as var;
 
 @mixin section {
-    
+    .background-2{
+        background: var.$dark-blue-background;
+    }
+
+    .project-section{
+        margin: 0 6rem;
+        display: flex;
+        padding: 3rem 0;
+    }
 }
