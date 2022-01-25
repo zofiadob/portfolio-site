@@ -3,6 +3,7 @@
 @use './welcome-section' as welc;
 @use './about-section' as about;
 @use './project-section' as project;
+@use './caro-wrapper' as caro;
 
 html{
     box-sizing: border-box;
@@ -25,3 +26,4 @@ body{
 @include welc.section;
 @include about.section;
 @include project.section;
+@include caro.section;
