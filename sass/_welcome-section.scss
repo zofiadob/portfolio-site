@@ -21,7 +21,7 @@
 
         .big-button{
             max-width: 15rem;
-            padding: 1rem;
+            padding: 1rem 4rem;
             margin: auto;
         }
     }
@@ -33,6 +33,8 @@
         font-weight: var.$semiBold;
         border: 1px solid var.$blue;
         transition: color .7s, background-color .7s;
+        text-decoration: none;
+        
 
         &:hover{
             background: transparent;

@@ -6,6 +6,7 @@ html {
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -78,7 +79,7 @@ body .text-blue {
 }
 .welcome-section .big-button {
   max-width: 15rem;
-  padding: 1rem;
+  padding: 1rem 4rem;
   margin: auto;
 }
 
@@ -89,6 +90,7 @@ body .text-blue {
   font-weight: 600;
   border: 1px solid #63CCFA;
   transition: color 0.7s, background-color 0.7s;
+  text-decoration: none;
 }
 .button:hover {
   background: transparent;
@@ -114,6 +116,7 @@ body .text-blue {
   width: 100%;
   max-width: 350px;
   border-radius: 50%;
+  box-shadow: -20px -8px rgba(97, 204, 250, 0.48);
 }
 
 .icon-container {
@@ -147,11 +150,12 @@ body .text-blue {
 
 .caro-wrapper {
   margin: 0 6rem 0 14rem;
+  padding-bottom: 4rem;
   display: flex;
 }
 
 .text-col {
-  padding-right: 1rem;
+  padding-right: 3rem;
 }
 .text-col h2 {
   font-weight: 400;
@@ -160,7 +164,42 @@ body .text-blue {
 .text-col h3 {
   font-weight: 300;
 }
+.text-col .tags-box {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-col .tags-box .tag {
+  border-radius: 4rem;
+  border: 1px solid #63CCFA;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+}
 
 .img-col {
-  background: burlywood;
+  background-image: url("../images/projects-images/project-01.png");
+  background-position: left;
+  background-size: cover;
+  min-width: 50%;
+  min-height: 30em;
+  max-width: 50%;
+  border-radius: 1rem;
+  box-shadow: -20px -8px rgba(97, 204, 250, 0.48);
+}
+
+.arrow-col {
+  padding-left: 2rem;
+  margin: auto;
+}
+.arrow-col .arrow-icon {
+  margin: 2rem 0;
+  filter: brightness(0) invert(1);
+  transition: 0.7s filter;
+}
+.arrow-col .arrow-icon:hover {
+  cursor: pointer;
+  filter: none;
+}
+.arrow-col .arrow-down {
+  transform: rotate(0.5turn);
 }

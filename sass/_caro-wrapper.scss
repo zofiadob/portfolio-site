@@ -4,11 +4,12 @@
 
     .caro-wrapper{
         margin: 0 6rem 0 14rem;
+        padding-bottom: 4rem;
         display: flex;
     }
 
     .text-col{
-        padding-right: 1rem;
+        padding-right: 3rem;
 
         h2{
             font-weight: var.$regular;
@@ -18,9 +19,51 @@
         h3{
             font-weight: var.$light;
         }
+
+        .tags-box{
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+
+            .tag{
+                border-radius: 4rem;
+                border: 1px solid var.$blue;
+                padding: .5rem 2rem;
+                margin: .5rem;
+            }
+        }
     }
 
     .img-col{
-        background: burlywood;
+        background-image: url('../images/projects-images/project-01.png');
+        background-position:left;
+        background-size: cover;
+        min-width: 50%;
+        min-height: 30em;
+        max-width: 50%;
+        border-radius: 1rem;
+        box-shadow: -20px -8px var.$blue-transparent;
+    }
+
+
+    .arrow-col{
+        padding-left: 2rem;
+        margin: auto;
+
+        .arrow-icon{
+            margin: 2rem 0;
+            filter:  brightness(0) invert(1);
+            transition: .7s filter;
+
+
+            &:hover{
+                cursor: pointer;
+                filter: none;
+            }
+        }
+
+        .arrow-down{
+            transform: rotate(0.5turn);
+        }
     }
 }
