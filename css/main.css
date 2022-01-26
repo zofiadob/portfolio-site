@@ -135,7 +135,9 @@ body .text-blue {
   margin-top: 0;
 }
 .text-container h3 {
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 2rem;
 }
 
 .background-2 {
@@ -154,15 +156,21 @@ body .text-blue {
   display: flex;
 }
 
+.slide {
+  display: none;
+}
+
 .text-col {
-  padding-right: 3rem;
+  padding-right: 5rem;
 }
 .text-col h2 {
   font-weight: 400;
-  font-size: 2em;
+  font-size: 2.4em;
 }
 .text-col h3 {
   font-weight: 300;
+  font-size: 1.3em;
+  line-height: 2rem;
 }
 .text-col .tags-box {
   margin-top: 2rem;
@@ -178,7 +186,7 @@ body .text-blue {
 
 .img-col {
   background-image: url("../images/projects-images/project-01.png");
-  background-position: left;
+  background-position: center;
   background-size: cover;
   min-width: 50%;
   min-height: 30em;
