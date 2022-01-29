@@ -1,5 +1,19 @@
 const buttonUp = document.querySelector('.arrow-up');
 const buttonDown = document.querySelector('.arrow-down');
+const columnList = document.querySelectorAll('.text-col');
+
+
+function changeText(num, nextnum, upOrDown){
+
+    if(upOrDown === 'up'){
+        columnList[(num + 2)%3].style.display = 'none';
+        columnList[(nextnum + 2)%3].style.display = 'inline';
+    }
+    else if(upOrDown === 'down'){
+        columnList[(num + 2)%3].style.display = 'none';
+        columnList[(num + 1)%3].style.display = 'inline';
+    }
+}
 
 
 buttonUp.addEventListener('click', state => {
@@ -8,8 +22,7 @@ buttonUp.addEventListener('click', state => {
     let num = style.backgroundImage.slice(-7, -6); 
     let nextNum = (parseInt(num) + 1) % 3;
     currentImg.style.backgroundImage = "url('../images/projects-images/project-0" + nextNum + ".png')";
-    console.log(style.backgroundImage);
-    console.log(nextNum);
+    changeText(num, nextNum, 'up');
 })
 
 buttonDown.addEventListener('click', state => {
@@ -18,6 +31,5 @@ buttonDown.addEventListener('click', state => {
     let num = style.backgroundImage.slice(-7, -6); 
     let nextNum = (parseInt(num) + 2) % 3;
     currentImg.style.backgroundImage = "url('../images/projects-images/project-0" + nextNum + ".png')";
-    console.log(style.backgroundImage);
-    console.log(nextNum);
+    changeText(num, nextNum, 'down');
 })
