@@ -5,6 +5,7 @@
 @use './project-section' as project;
 @use './caro-wrapper' as caro;
 @use './graphics-section' as graph;
+@use './modal' as mod;
 
 html{
     box-sizing: border-box;
@@ -30,3 +31,4 @@ body{
 @include project.section;
 @include caro.section;
 @include graph.section;
+@include mod.modal;
