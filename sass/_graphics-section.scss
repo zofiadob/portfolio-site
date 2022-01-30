@@ -6,6 +6,11 @@
         .text-container{
             width: 100%;
         }
+
+        .icon-container{
+            opacity: 0;
+        }
+    
     }
 
     .line-separator{
@@ -15,9 +20,6 @@
         background: var.$blue;
     }
 
-    .icon-container{
-        opacity: 0;
-    }
 
     .grid-container{
         display: grid;

@@ -219,16 +219,15 @@ body .text-blue {
 .project-section .text-container {
   width: 100%;
 }
+.project-section .icon-container {
+  opacity: 0;
+}
 
 .line-separator {
   min-height: 5px;
   max-width: 80%;
   margin: 2rem auto;
   background: #63CCFA;
-}
-
-.icon-container {
-  opacity: 0;
 }
 
 .grid-container {
