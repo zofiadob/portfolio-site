@@ -218,8 +218,9 @@ body .text-blue {
 
 .project-section .text-container {
   width: 100%;
+  margin-bottom: 3rem;
 }
-.project-section .icon-container {
+.project-section #hide {
   opacity: 0;
 }
 
@@ -347,4 +348,62 @@ body .text-blue {
   .modal-content {
     width: 100%;
   }
+}
+.text-container {
+  width: 100%;
+}
+
+.se-box {
+  display: flex;
+  position: relative;
+}
+.se-box .skill-box {
+  width: 60%;
+}
+.se-box .skill-box .text-exp {
+  padding: 1rem 3rem;
+}
+.se-box .expierince-box {
+  width: 40%;
+}
+
+.exp {
+  position: relative;
+}
+.exp .circle {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  background: #202D3F;
+  border: 5px solid #63CCFA;
+  position: absolute;
+  border-radius: 50%;
+  top: 2.3rem;
+  left: -0.8rem;
+}
+.exp .line {
+  min-width: 7px;
+  min-height: 100%;
+  background-color: #63CCFA;
+  position: absolute;
+}
+.exp .first {
+  border-radius: 10px 10px 0 0;
+}
+.exp .last {
+  border-radius: 0 0 10px 10px;
+}
+.exp h3, .exp h4, .exp h5 {
+  margin: 0.5rem;
+  font-weight: 400;
+}
+.exp h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #63CCFA;
+  margin-top: 1.3rem;
+}
+.exp h5 {
+  margin-top: 1rem;
 }
