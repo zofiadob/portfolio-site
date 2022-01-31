@@ -328,7 +328,7 @@ body .text-blue {
   }
 }
 .close {
-  position: absolute;
+  position: fixed;
   top: 15px;
   right: 35px;
   color: #63CCFA;
@@ -456,4 +456,14 @@ body .text-blue {
 .skill-box .short-grid .level-lang {
   font-weight: 600;
   color: #63CCFA;
+}
+
+.contact-section {
+  text-align: center;
+}
+.contact-section img {
+  width: 6em;
+}
+.contact-section .text-area h3 {
+  font-weight: 300;
 }
