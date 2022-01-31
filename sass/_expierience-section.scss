@@ -1,0 +1,76 @@
+@use './variables' as var;
+
+@mixin section {
+    
+    .text-container{
+        width: 100%;
+    }
+
+    .se-box{
+        display: flex;
+        position: relative;
+        margin: 3rem 0;
+        
+        .experience-box{
+            width: 70%;
+            
+            .text-exp{
+                padding: 1rem 3rem;
+            }
+        }
+
+        .expierince-box{
+            width: 40%;
+        }
+    }
+
+
+    .exp{
+        position: relative;
+
+    .circle{
+        min-width: 1.5rem;
+        min-height: 1.5rem;
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+        background: var.$dark-blue-lighter;
+        border: 4px solid var.$blue;
+        position: absolute;
+        border-radius: 50%;
+        top: 2.3rem;
+        left: -.8rem;
+    }
+
+    .line{
+        min-width: 5px;
+        min-height: 100%;
+        background-color: var.$blue;
+        position: absolute;
+    }
+
+    .first{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .last{
+        border-radius: 0 0 10px 10px;
+    }
+
+
+    h3, h4, h5{
+        margin: 0.5rem;
+        font-weight: var.$regular;
+    }
+
+    h3{
+        font-size: 1.6rem;
+        font-weight: var.$semiBold;
+        color: var.$blue;
+        margin-top: 1.3rem;
+    }
+
+    h5{
+        margin-top: 1rem;
+    }
+}
+}

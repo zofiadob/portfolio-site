@@ -6,6 +6,7 @@
 @use './caro-wrapper' as caro;
 @use './graphics-section' as graph;
 @use './modal' as mod;
+@use './expierience-section' as exp;
 @use './skills-section' as skill;
 
 html{
@@ -33,4 +34,5 @@ body{
 @include caro.section;
 @include graph.section;
 @include mod.modal;
+@include exp.section;
 @include skill.section;
