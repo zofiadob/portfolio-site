@@ -460,10 +460,40 @@ body .text-blue {
 
 .contact-section {
   text-align: center;
+  padding: 3rem;
 }
 .contact-section img {
   width: 6em;
 }
+.contact-section .text-area h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
 .contact-section .text-area h3 {
   font-weight: 300;
+  margin: 1rem 0 3rem 0;
+}
+.contact-section .under-link {
+  color: #63CCFA;
+  font-weight: 600;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, #63CCFA, #161E29);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 3px;
+  transition: background-size 500ms ease-in-out;
+}
+.contact-section .under-link:hover {
+  background-size: 100% 3px;
+  color: inherit;
+}
+.contact-section i {
+  font-size: 2.5rem;
+  margin: 0 0.3rem;
+  transition: color 0.7s;
+  color: #FFFFFF;
+}
+.contact-section i:hover {
+  cursor: pointer;
+  color: #63CCFA;
 }

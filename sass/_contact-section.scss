@@ -3,6 +3,7 @@
 @mixin section {
     .contact-section{
         text-align: center;
+        padding: 3rem;
 
         img{
             width: 6em;
@@ -12,11 +13,41 @@
         .text-area{
 
             h2{
-
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
             }
 
             h3{
                 font-weight: var.$light;
+                margin: 1rem 0 3rem 0;
+            }
+        }
+
+        .under-link{
+            color:var.$blue;
+            font-weight: var.$semiBold;
+            text-decoration: none;
+            background-image: linear-gradient(90deg, var.$blue, var.$dark-blue-background);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 0% 3px;
+            transition: background-size 500ms ease-in-out;
+
+            &:hover{
+                background-size: 100% 3px;
+                color: inherit;
+            }
+        }
+
+        i{
+            font-size: 2.5rem;
+            margin: 0 .3rem;
+            transition: color .7s;
+            color: var.$white;
+
+            &:hover{
+                cursor: pointer;
+                color: var.$blue;
             }
         }
     }
