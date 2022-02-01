@@ -150,6 +150,16 @@ body .text-blue {
   padding: 3rem 0;
 }
 
+.text-col a {
+  text-decoration: none;
+}
+
+.more-button {
+  padding: 0.7rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
 .caro-wrapper {
   margin: 0 6rem 0 14rem;
   padding-bottom: 4rem;
@@ -359,12 +369,12 @@ body .text-blue {
   margin: 3rem 0;
 }
 .se-box .experience-box {
-  width: 70%;
+  width: 60%;
 }
 .se-box .experience-box .text-exp {
   padding: 1rem 3rem;
 }
-.se-box .expierince-box {
+.se-box .skill-box {
   width: 40%;
 }
 
