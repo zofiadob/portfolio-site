@@ -1,6 +1,13 @@
 @use "./variables" as var;
 
 @mixin section {
+
+    .primal-nav{
+        i{
+            display: none;
+            font-size: 1.7rem;
+        }
+    }
   
     .welcome-section{
         margin: 8em 6rem;
@@ -10,13 +17,14 @@
 
         h1{
             font-weight: var.$semiBold;
-            font-size: 4rem;
+            font-size: clamp(1rem, 10vw, 4rem); 
             margin: 1rem 0;
         }
 
         h2{
             font-weight: var.$light;
-            margin-bottom: 3rem;
+            font-size: clamp(1rem, 10vw, 1.5rem);
+            padding-bottom: 1.5rem;
         }
 
         .big-button{

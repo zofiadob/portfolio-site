@@ -9,6 +9,7 @@
 @use './expierience-section' as exp;
 @use './skills-section' as skill;
 @use './contact-section' as cont;
+@use './mobile' as mob;
 
 html{
     box-sizing: border-box;
@@ -38,3 +39,4 @@ body{
 @include exp.section;
 @include skill.section;
 @include cont.section;
+@include mob.mobile;

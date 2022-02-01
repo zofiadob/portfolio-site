@@ -1,6 +1,7 @@
 @use "./variables" as var;
 
 @mixin section {
+
     .background-1{
         background: var.$dark-blue-lighter;
     }
