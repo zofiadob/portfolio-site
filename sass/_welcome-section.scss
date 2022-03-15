@@ -3,6 +3,7 @@
 @mixin section {
 
     .primal-nav{
+        position: sticky;
         i{
             display: none;
             font-size: 1.7rem;
