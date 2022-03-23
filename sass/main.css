@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+.under-link {
+  color: #63CCFA;
+  font-weight: 600;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, #63CCFA, #161E29);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 3px;
+  transition: background-size 500ms ease-in-out;
+}
+.under-link:hover {
+  background-size: 100% 3px;
+  color: inherit;
+}
+
 html {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -63,6 +78,10 @@ body .text-blue {
   color: #63CCFA;
 }
 
+.primal-nav {
+  position: -webkit-sticky;
+  position: sticky;
+}
 .primal-nav i {
   display: none;
   font-size: 1.7rem;
@@ -166,6 +185,10 @@ body .text-blue {
   margin: 1.5rem 0;
 }
 
+.half-button {
+  width: 50%;
+}
+
 .caro-wrapper {
   margin: 0 6rem 0 14rem;
   padding-bottom: 4rem;
@@ -206,13 +229,13 @@ body .text-blue {
 
 .img-col {
   background-image: url("../images/projects-images/project-01.png");
-  background-position: center;
   background-size: cover;
   min-width: 50%;
   min-height: 30em;
   max-width: 50%;
   border-radius: 1rem;
   box-shadow: -20px -8px rgba(97, 204, 250, 0.48);
+  background-position: left;
 }
 
 .arrow-col {
@@ -261,7 +284,7 @@ body .text-blue {
 .grid-container .item {
   background: rgba(97, 204, 250, 0.48);
   background-size: cover;
-  background-position: center;
+  background-position: left;
   transition: opacity 0.5s ease-in-out;
 }
 .grid-container .item:hover {
@@ -380,6 +403,9 @@ body .text-blue {
 .se-box .experience-box .text-exp {
   padding: 1rem 3rem;
 }
+.se-box .experience-box li {
+  font-size: 1.2rem;
+}
 .se-box .skill-box {
   width: 40%;
 }
@@ -411,7 +437,9 @@ body .text-blue {
 .exp .last {
   border-radius: 0 0 10px 10px;
 }
-.exp h3, .exp h4, .exp h5 {
+.exp h3,
+.exp h4,
+.exp h5 {
   margin: 0.5rem;
   font-weight: 400;
 }
@@ -420,9 +448,6 @@ body .text-blue {
   font-weight: 600;
   color: #63CCFA;
   margin-top: 1.3rem;
-}
-.exp h5 {
-  margin-top: 1rem;
 }
 
 .skill-box {
@@ -489,27 +514,14 @@ body .text-blue {
   font-weight: 300;
   margin: 1rem 0 3rem 0;
 }
-.contact-section .under-link {
-  color: #63CCFA;
-  font-weight: 600;
-  text-decoration: none;
-  background-image: linear-gradient(90deg, #63CCFA, #161E29);
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 0% 3px;
-  transition: background-size 500ms ease-in-out;
-}
-.contact-section .under-link:hover {
-  background-size: 100% 3px;
-  color: inherit;
-}
-.contact-section i {
+
+i {
   font-size: 2.5rem;
   margin: 0 0.3rem;
   transition: color 0.7s;
   color: #FFFFFF;
 }
-.contact-section i:hover {
+i:hover {
   cursor: pointer;
   color: #63CCFA;
 }
@@ -559,7 +571,7 @@ body .text-blue {
     margin: 0;
   }
   .project-section .text-container h2 {
-    margin: 0;
+    margin: 0 0 2rem 0;
   }
   .project-section .icon-container {
     display: none;
@@ -636,4 +648,4 @@ body .text-blue {
   .skills-section .se-box .line {
     left: 0%;
   }
-}
+}/*# sourceMappingURL=main.css.map */
