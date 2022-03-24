@@ -658,4 +658,13 @@ i:hover {
   .skills-section .se-box .line {
     left: 0%;
   }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .caro-wrapper {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+  .caro-wrapper .img-col {
+    min-width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

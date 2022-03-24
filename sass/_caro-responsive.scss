@@ -1,0 +1,16 @@
+@use "./variables" as var;
+
+@mixin caroResp() {
+    
+    @media screen and (min-width: 901px) and (max-width: 1200px) {
+        
+        .caro-wrapper{
+            flex-direction: column-reverse;
+            flex-wrap: nowrap;
+
+            .img-col{
+                min-width: 100%;
+            }
+        }
+    }
+}
