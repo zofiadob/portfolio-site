@@ -9,7 +9,7 @@
   background-size: 0% 3px;
   transition: background-size 500ms ease-in-out;
 }
-.under-link:hover {
+.under-link:hover, .under-link:active {
   background-size: 100% 3px;
   color: inherit;
 }
@@ -179,14 +179,20 @@ body .text-blue {
   text-decoration: none;
 }
 
-.more-button {
-  padding: 0.7rem;
+.button-box {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: left;
   text-align: center;
-  margin: 1.5rem 0;
+  flex-wrap: wrap;
 }
-
-.half-button {
-  width: 50%;
+.button-box a {
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+  width: 43%;
+}
+.button-box .more-button {
+  padding: 1rem;
 }
 
 .caro-wrapper {
@@ -602,6 +608,10 @@ i:hover {
   }
   .caro-wrapper .arrow-col .arrow-down {
     transform: rotate(90deg);
+  }
+  .caro-wrapper .button-box a {
+    width: 100%;
+    margin-right: 0;
   }
 
   .graphics-section .text-container {
