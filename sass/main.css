@@ -338,7 +338,7 @@ body .text-blue {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -409,6 +409,9 @@ body .text-blue {
 .se-box .experience-box .text-exp {
   padding: 1rem 3rem;
 }
+.se-box .experience-box h3 {
+  text-align: left;
+}
 .se-box .experience-box li {
   font-size: 1.2rem;
 }
@@ -466,17 +469,20 @@ body .text-blue {
 }
 .skill-box .skills {
   margin: 1rem;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr, 1fr;
-  grid-template-rows: repeat(10, 1fr);
-  row-gap: 1rem;
-  -moz-column-gap: 0.7rem;
-       column-gap: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .skill-box .nameSkill {
   margin: auto 0;
-  grid-column: 1/2;
+  width: 15%;
+  padding: 1rem;
+}
+.skill-box .nameSkill svg {
+  fill: white;
+}
+.skill-box .lang {
+  display: grid;
 }
 .skill-box .point-box {
   display: flex;
@@ -558,14 +564,20 @@ i:hover {
     margin-top: 1rem;
   }
 
+  h3 {
+    text-align: center;
+  }
+
+  .text-container {
+    padding: 0 1rem 0 1rem;
+  }
+
   .about-section {
     margin: 0 1.5rem 0 1.5rem;
     text-align: center;
   }
-  .about-section h3 {
-    text-align: justify;
-  }
-  .about-section .icon-container, .about-section .photo-container {
+  .about-section .icon-container,
+.about-section .photo-container {
     display: none;
   }
 
@@ -590,9 +602,6 @@ i:hover {
   }
   .caro-wrapper .tags-box {
     justify-content: center;
-  }
-  .caro-wrapper h3 {
-    text-align: justify;
   }
   .caro-wrapper .text-col {
     padding: 0;
@@ -648,7 +657,8 @@ i:hover {
   .skills-section .se-box {
     display: block;
   }
-  .skills-section .se-box .experience-box, .skills-section .se-box .skill-box {
+  .skills-section .se-box .experience-box,
+.skills-section .se-box .skill-box {
     width: 100%;
     text-align: left;
   }

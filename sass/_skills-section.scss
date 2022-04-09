@@ -2,6 +2,7 @@
 
 @mixin section {
     
+    
     .skill-box{
         width: 30%;
 
@@ -12,19 +13,26 @@
             font-weight: var.$semiBold;
         }
 
+
         .skills{
             margin: 1rem;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr, 1fr;
-            grid-template-rows: repeat(10, 1fr);
-            row-gap: 1rem;
-            column-gap: .7rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .nameSkill{
             margin: auto 0;
-            grid-column: 1/2;
+            width: 15%;
+            padding: 1rem;
+
+            svg{
+                fill: white;
+            }
+        }
+
+        .lang{
+            display: grid;
         }
 
         .point-box{
