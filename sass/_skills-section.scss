@@ -15,10 +15,25 @@
 
 
         .skills{
-            margin: 1rem;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: left;
+
+            .tags-box{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: left;
+    
+                .tag{
+                    border-radius: 4rem;
+                    color: #202D3F;
+                    font-weight: 600;
+                    border: 1px solid var.$blue;
+                    background-color: var.$blue;
+                    padding: .5rem 2rem;
+                    margin: .5rem;
+                }
+            }
         }
 
         .nameSkill{

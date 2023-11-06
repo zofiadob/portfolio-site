@@ -79,7 +79,6 @@ body .text-blue {
 }
 
 .primal-nav {
-  position: -webkit-sticky;
   position: sticky;
 }
 .primal-nav i {
@@ -125,6 +124,7 @@ body .text-blue {
 
 .background-1 {
   background: #202D3F;
+  position: relative;
 }
 
 .about-section {
@@ -153,7 +153,7 @@ body .text-blue {
 
 .text-container {
   justify-self: flex-start;
-  padding: 0 4rem 0 4rem;
+  padding: 0 4rem;
 }
 .text-container h2 {
   font-size: 2.5rem;
@@ -468,10 +468,23 @@ body .text-blue {
   font-weight: 600;
 }
 .skill-box .skills {
-  margin: 1rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
+}
+.skill-box .skills .tags-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.skill-box .skills .tags-box .tag {
+  border-radius: 4rem;
+  color: #202D3F;
+  font-weight: 600;
+  border: 1px solid #63CCFA;
+  background-color: #63CCFA;
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
 }
 .skill-box .nameSkill {
   margin: auto 0;
@@ -551,7 +564,6 @@ i:hover {
   .primal-nav .menu-item a i {
     display: inline;
   }
-
   .welcome-section {
     margin: 4rem 1.5rem 0 1.5rem;
   }
@@ -563,24 +575,20 @@ i:hover {
     font-size: 1rem;
     margin-top: 1rem;
   }
-
   h3 {
     text-align: center;
   }
-
   .text-container {
     padding: 0 1rem 0 1rem;
   }
-
   .about-section {
     margin: 0 1.5rem 0 1.5rem;
     text-align: center;
   }
   .about-section .icon-container,
-.about-section .photo-container {
+  .about-section .photo-container {
     display: none;
   }
-
   .project-section {
     margin: 0 1rem 0 1rem;
     text-align: center;
@@ -594,7 +602,6 @@ i:hover {
   .project-section .icon-container {
     display: none;
   }
-
   .caro-wrapper {
     margin: 0 3rem;
     display: block;
@@ -622,7 +629,6 @@ i:hover {
     width: 100%;
     margin-right: 0;
   }
-
   .graphics-section .text-container {
     padding: 0;
   }
@@ -650,15 +656,17 @@ i:hover {
     grid-column: 1/10;
     grid-row: 5/6;
   }
-
   .skills-section .text-container {
     padding: 0 1rem;
+  }
+  .skills-section .skills .tags-box {
+    justify-content: center;
   }
   .skills-section .se-box {
     display: block;
   }
   .skills-section .se-box .experience-box,
-.skills-section .se-box .skill-box {
+  .skills-section .se-box .skill-box {
     width: 100%;
     text-align: left;
   }
@@ -677,4 +685,6 @@ i:hover {
   .caro-wrapper .img-col {
     min-width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

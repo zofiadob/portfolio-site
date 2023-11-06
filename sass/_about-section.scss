@@ -4,6 +4,7 @@
 
     .background-1{
         background: var.$dark-blue-lighter;
+        position: relative;
     }
 
     .about-section {
@@ -36,7 +37,7 @@
 
     .text-container {
         justify-self: flex-start;
-        padding: 0 4rem 0 4rem;
+        padding: 0 4rem;
 
         h2 {
             font-size: 2.5rem;
